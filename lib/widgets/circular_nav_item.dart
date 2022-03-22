@@ -8,9 +8,10 @@ class CircularNavItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(title);
     return Container(
-      height: 200,
-      width: 200,
+      height: 175,
+      width: 175,
       decoration: const BoxDecoration(
         color: Color.fromRGBO(160, 160, 160, 1),
         shape: BoxShape.circle,
@@ -18,6 +19,7 @@ class CircularNavItem extends StatelessWidget {
       child: Center(
         child: Text(
           title,
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
