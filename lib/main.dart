@@ -1,3 +1,4 @@
+import 'package:aliveyuzu/views/blog_view/blog_view.dart';
 import 'package:aliveyuzu/views/home_view/home_view.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomeView(),
+      home: BlogView(),
     );
   }
 }
