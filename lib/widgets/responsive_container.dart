@@ -8,11 +8,10 @@ class ResponsiveContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(type);
     return type == 'row1'
         ? Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: const [
               CircularNavItem(
                 title: 'ABOUT ME',
                 navDir: 'About',
@@ -29,10 +28,10 @@ class ResponsiveContainer extends StatelessWidget {
         : type == 'row2'
             ? Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   CircularNavItem(
-                    title: 'SPARE PAGE',
-                    navDir: 'Spare',
+                    title: 'BLOG',
+                    navDir: 'Blog',
                   ),
                   SizedBox(
                     width: 200,
@@ -46,7 +45,7 @@ class ResponsiveContainer extends StatelessWidget {
             : type == 'col1'
                 ? Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       CircularNavItem(
                         title: 'ABOUT ME',
                         navDir: 'About',
@@ -63,10 +62,10 @@ class ResponsiveContainer extends StatelessWidget {
                 : type == 'col2'
                     ? Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           CircularNavItem(
-                            title: 'SPARE PAGE',
-                            navDir: 'Spare',
+                            title: 'BLOG',
+                            navDir: 'Blog',
                           ),
                           SizedBox(
                             height: 100,
